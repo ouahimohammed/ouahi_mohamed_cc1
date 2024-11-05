@@ -1,0 +1,154 @@
+/* Styles de base */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 20px;
+}
+
+/* Conteneur de la liste des voitures */
+.voitures-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Carte individuelle pour chaque voiture */
+.voiture-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 300px;
+  text-align: center;
+  padding: 15px;
+}
+
+.voiture-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.voiture-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.voiture-card h3 {
+  font-size: 1.5em;
+  color: #34495e;
+}
+
+.voiture-card p {
+  font-size: 1em;
+  color: #7f8c8d;
+}
+
+/* Boutons de la carte de voiture */
+.voiture-card button {
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 1em;
+  margin: 10px 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.voiture-card button:hover {
+  background-color: #2980b9;
+}
+
+.voiture-card button:focus {
+  outline: none;
+}
+
+/* Section des statistiques */
+.stats {
+  background-color: #ecf0f1;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.stats p {
+  font-size: 1.1em;
+  color: #2c3e50;
+  margin: 10px 0;
+}
+
+.stats ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.stats li {
+  font-size: 1em;
+  color: #7f8c8d;
+}
+/* Conteneur de la liste des voitures */
+.voitures-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Table de statistiques */
+.stats-table {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: #ecf0f1;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stats-table th, .stats-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.stats-table th {
+  background-color: #3498db;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.stats-table td {
+  color: #2c3e50;
+}
+
+.stats-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.stats-table ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.stats-table ul li {
+  color: #7f8c8d;
+  margin: 5px 0;
+}
